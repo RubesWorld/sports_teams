@@ -7,17 +7,41 @@ import Searchbar from "./components/Searchbar";
 import TeamTabs from "./components/TeamTabs";
 
 export default function App() {
-  const [teams, setteams] = useState(data);
+  const [teams, setTeams] = useState(data);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  // const handleRemoveTeams = (item) => {
+  //   const updatedTeams = teams.filter((team) => item.id !== team.id);
+  //   setTeams(updatedTeams);
+  // };
+
+  const searchedTeams = teams.filter((team) =>
+    team.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="App">
       <Header />
-      <Searchbar />
+      <Searchbar onChange={handleChange} id="search" value={searchTerm}>
+        {" "}
+        Searching for: <strong>{searchTerm}</strong>
+      </Searchbar>
 
       <div className="container">
-        {data.map((team, key) => (
-          <TeamTabs team={team} index={key} />
-        ))}
+        <TeamTabs team={searchedTeams} />
       </div>
     </div>
   );
 }
+
+// const handleRemoveStory = item => {
+//   const newStories = stories.filter(
+//     story => item.objectID !== story.objectID
+//   );
+
+//   setStories(newStories);
+// };
