@@ -1,15 +1,26 @@
 const Header = () => (
   <>
-    <h1>Fan or Failures?</h1>
-    <h2>
-      How have your favorite teams fared since 2000? Have you been going to
-      Championship Parades year after year or been bringing out the brown paper
-      bag? Find out by selecting your favorite teams!
-    </h2>
-    <p>
-      Select your favorite teams and see what your fandom's success has looked
-      like.{" "}
-    </p>
+    <div className="header">
+      <div className="header-container">
+        <h1>Fanship Success Index</h1>
+        <h2>
+          How have your favorite teams fared since 2000? Have you been going to{" "}
+          <span className="brady">
+            Championship Parades{" "}
+            <img src="/images/brady_wasted.jpeg" alt="brady wasted lol" />
+          </span>{" "}
+          year after year or been bringing out the{" "}
+          <span class="brown-paper-bag">
+            brown paper bags
+            <img
+              src="/images/knicks_paper_bags.png"
+              alt="Knicks players miserable about their season"
+            />
+          </span>
+          ? Find out by selecting your favorite teams!
+        </h2>
+      </div>
+    </div>
   </>
 );
 
