@@ -15,13 +15,11 @@ const Searchbar = ({ onSearch, onChange, value, id }) => {
         />
       </div>
       <div className="button-container">
-        <br />
-        <br />
-        <button>Basketball</button>
-        <button>Baseball</button>
-        <button>Hockey</button>
-        <button>Football</button>
-        <button>Soccer</button>
+        <button className="basketball">Basketball</button>
+        <button className="baseball">Baseball</button>
+        <button className="hockey">Hockey</button>
+        <button className="football">Football</button>
+        <button className="soccer">Soccer</button>
       </div>
     </div>
   );
