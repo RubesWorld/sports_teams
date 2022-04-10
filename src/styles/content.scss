@@ -1,0 +1,45 @@
+.teams-container {
+display: flex;
+flex-flow: row wrap;
+margin-top: 1rem 0.4rem;
+align-items: center;
+justify-content: center;
+}
+
+.team-tab {
+  width: 250px;
+  border: 1px solid tan;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0.3rem;
+}
+
+.text {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-title{
+font-size: 1.5em;
+}
+
+.tab-sub{
+  font-size: 1em;
+}
+
+.tab-button {
+  display: inline-block;
+  border: 0.1em solid black;
+  padding: 0.35em 1.2em;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-align: center;
+  background-color:white;
+  &:hover{
+    background-color: black;
+    color:white
+  }
+}
+
