@@ -3,7 +3,7 @@ const Header = () => (
     <div className="header">
       <div className="header-container">
         <h1>Fanship Success Index</h1>
-        <h2>
+        <h2 className="header-sub">
           How have your favorite teams fared since 2000? Have you been going to{" "}
           <span className="brady">
             Championship Parades{" "}
@@ -19,6 +19,7 @@ const Header = () => (
           </span>
           ? Find out by selecting your favorite teams!
         </h2>
+        <p>*Currently starting with NBA</p>
       </div>
     </div>
   </>

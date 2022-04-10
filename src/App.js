@@ -37,7 +37,7 @@ export default function App() {
         Searching for: <strong>{searchTerm}</strong>
       </Searchbar>
 
-      <div className="container">
+      <div className="teams-container">
         <TeamTabs team={searchedTeams} />
       </div>
     </div>
